@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+
+    <script>
+
+        // Obter a hora
+        var hora = parseInt(prompt('Informe uma hora'))
+
+        // Obter a cidade
+        var cidade = prompt('Escolha a cidade que deseja saber a hora: \n1 - Nova Iorque \n2 - Lisboa \n3 - Tóquio')
+
+        // Condicional
+        if(cidade == 1)
+            hora = hora - 1
+        else if(cidade == 2)
+            hora = hora + 4
+        else if(cidade == 3)
+            hora = hora + 12
+
+        // Caso a hora seja superior a 23
+        if(hora > 23)
+            alert('O horário é ' + (hora - 24))
+        else
+            alert('O horário é ' + hora)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
