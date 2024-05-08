@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 - Para</title>
+
+    <script>
+
+        // Obter nome
+        var nome = prompt('Informe seu nome.')
+
+        // Exibir a quantidade de caracteres
+        document.write('O nome ' + nome + ' possui ' + nome.length + ' caracteres')
+
+        // Contadores para vogais e consoantes
+        var vogais = 0
+        var consoantes = 0
+
+        // Laço
+        for(var indice=0; indice<nome.length; indice++){
+            // Caractere
+            var caractere = nome.charAt(indice)
+
+            // Condicional
+            if(caractere == 'a' || caractere == 'e' || caractere == 'i' || caractere == 'o' || caractere == 'u'){
+                vogais++
+            }else{
+                consoantes++
+            }
+        }
+
+        // Exibir vogais e consoantes
+        document.write('<br>Há '+vogais+' vogais no nome '+nome)
+        document.write('<br>Há '+consoantes+' vogais no nome '+nome)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
