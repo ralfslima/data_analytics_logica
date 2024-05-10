@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 - Exercício</title>
+
+    <script>
+
+        // Menu
+        var menu = '***** VOTAÇÃO *****'
+            menu+= '\n\n1) Pizza'
+            menu+= '\n2) Lasanha'
+            menu+= '\n3) Pastel'
+            menu+= '\n4) Coxinha'
+            menu+= '\n5) Finalizar votação'
+
+        // Contadores
+        var pizza = 0
+        var lasanha = 0
+        var pastel = 0
+        var coxinha = 0
+
+        // Voto
+        var voto
+
+        // Laço de repetição
+        while(voto != 5){
+
+            // Obter voto
+            voto = parseInt(prompt(menu))
+
+            // Estrutura de escolha
+            switch(voto){
+                case 1:
+                    alert('Você votou na pizza!')
+                    pizza++
+                break
+
+                case 2:
+                    alert('Você votou na lasanha!')
+                    lasanha++
+                break
+
+                case 3:
+                    alert('Você votou na pastel!')
+                    pastel++
+                break
+
+                case 4:
+                    alert('Você votou na cozinha!')
+                    coxinha++
+                break
+
+                case 5:
+                    alert('Votação finalizada!')
+                break
+
+                default:
+                    alert('Número inválido! O valor precisar estar entre 1 e 5!')
+            }
+
+        }
+
+        // Obter o valor do prato mais votado
+        var maiorVotos = pizza
+
+        if(lasanha > maiorVotos)
+            maiorVotos = lasanha
+
+        if(pastel > maiorVotos)
+            maiorVotos = pastel
+
+        if(coxinha > maiorVotos)
+            maiorVotos = coxinha
+
+
+        // Vencedor(es)
+        var nomesDosVencedores = ''
+        var qtdVencedores = 0
+
+        if(pizza == maiorVotos){
+            nomesDosVencedores += 'Pizza '
+            qtdVencedores++
+        }
+
+        if(lasanha == maiorVotos){
+            nomesDosVencedores += 'Lasanha '
+            qtdVencedores++
+        }
+
+        if(pastel == maiorVotos){
+            nomesDosVencedores += 'Pastel '
+            qtdVencedores++
+        }
+
+        if(coxinha == maiorVotos){
+            nomesDosVencedores += 'Coxinha '
+            qtdVencedores++
+        }
+        
+        // Exibir o(s) vencedor(res)
+        if(qtdVencedores == 1)
+            document.write('O vencedor é: <b>' + nomesDosVencedores + '</b> com ' + maiorVotos + ' voto(s).')
+        else
+            document.write('Os vencedores são: <b>' + nomesDosVencedores + '</b> com ' + maiorVotos + ' voto(s).')
+
+        // Quantidade de votos por pratos
+        document.write('<br><br>***** QUANTIDADE DE VOTOS POR PRATOS *****<br>')
+        document.write('Pizza obteve   ' + pizza   + ' voto(s)<br>')
+        document.write('Lasanha obteve ' + lasanha + ' voto(s)<br>')
+        document.write('Pastel obteve  ' + pastel  + ' voto(s)<br>')
+        document.write('Coxinha obteve ' + coxinha + ' voto(s)<br>')
+    
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

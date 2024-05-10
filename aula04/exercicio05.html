@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 - Exercício</title>
+
+    <script>
+
+        // Nomes
+        var nome, nome1, nome2, nome3
+
+        // Índice
+        var indice = 0
+
+        // Laço de repetição
+        while(indice <= 2){
+
+            // Obter um nome
+            nome = prompt('Informe o '+(indice+1)+'º nome.')
+
+            // Valida dependendo do índice
+            if(indice == 0){
+
+                // Cadastra o primeiro nome na variável nome1
+                nome1 = nome
+                alert('Nome cadastrado com sucesso!')
+                indice++
+
+            }else if(indice == 1){
+
+                // Verifica se o nome1 é diferente do nome informado
+                if(nome1 != nome){
+                    nome2 = nome
+                    alert('Nome cadastrado com sucesso!')
+                    indice++
+                }else{
+                    alert('O nome informado já existe.')
+                }
+
+            }else{
+
+                // Verifica se o nome1 e nome2 é diferente do nome informado
+                if(nome1 != nome && nome2 != nome){
+                    nome3 = nome
+                    alert('Nome cadastrado com sucesso!')
+                    indice++
+                }else{
+                    alert('O nome informado já existe.')
+                }
+
+            } // Condicional que executa através do índice
+
+        } // Laço de repetição
+
+        // Exibir os três nomes diferentes
+        document.write('O 1º nome é ' + nome1 + '<hr>')
+        document.write('O 2º nome é ' + nome2 + '<hr>')
+        document.write('O 3º nome é ' + nome3)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

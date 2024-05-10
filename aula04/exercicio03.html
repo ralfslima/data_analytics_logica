@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Exercício</title>
+
+    <script>
+
+        // Menu
+        var menu = '***** VOTAÇÃO *****'
+            menu+= '\n\n1) Ana'
+            menu+= '\n2) Bruno'
+            menu+= '\n3) Cleber'
+            menu+= '\n4) Daniela'
+            menu+= '\n5) Finalizar votação'
+
+        // Contadores
+        var ana = 0
+        var bruno = 0
+        var cleber = 0
+        var daniela = 0
+
+        // Voto
+        var voto
+
+        // Laço de repetição
+        while(voto != 5){
+
+            // Obter voto
+            voto = parseInt(prompt(menu))
+
+            // Estrutura de escolha
+            switch(voto){
+                case 1:
+                    alert('Voto para a Ana!')
+                    ana++
+                break
+
+                case 2:
+                    alert('Voto para o Bruno!')
+                    bruno++
+                break
+
+                case 3:
+                    alert('Voto para o Cleber!')
+                    cleber++
+                break
+
+                case 4:
+                    alert('Voto para a Daniela!')
+                    daniela++
+                break
+
+                case 5:
+                    alert('Votação finalizada!')
+                break
+
+                default:
+                    alert('Número inválido! O valor precisar estar entre 1 e 5!')
+            }
+
+        }
+
+        // Resultado
+        document.write('Ana obteve     ' + ana     + ' voto(s)<br>')
+        document.write('Bruno obteve   ' + bruno   + ' voto(s)<br>')
+        document.write('Cleber obteve  ' + cleber  + ' voto(s)<br>')
+        document.write('Daniela obteve ' + daniela + ' voto(s)<br>')
+
+
+    
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
