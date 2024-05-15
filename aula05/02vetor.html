@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - Vetor</title>
+
+    <script>
+
+        // Vetor de cidades
+        var cidades = []
+
+        // Variável para obter uma cidade
+        var cid
+
+        // Laço de repetição
+        while(cid != 'sair'){
+            // Obter uma cidade ou sair
+            cid = prompt('Informe uma cidade ou sair para finalizar')
+
+            // Cadastro da cidade no vetor
+            if(cid != 'sair')
+                cidades.push(cid)
+        }
+
+        // Laço de repetição
+        for(var indice=0; indice<cidades.length; indice++){
+            document.write(cidades[indice] + '<br>')
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

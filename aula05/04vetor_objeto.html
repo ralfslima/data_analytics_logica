@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 - Vetor e Objeto</title>
+
+    <script>
+
+        // Vetor de pessoas
+        var pessoas = [
+            {'nome':'Aline',  'idade':28, 'estuda':true},
+            {'nome':'Bianca', 'idade':21, 'estuda':false},
+            {'nome':'Caio',   'idade':32, 'estuda':true}
+        ]
+
+        //console.log(pessoas)
+
+        // Estrutura
+        var estrutura = '<table border="1">'
+
+        // Laço de repetição
+        for(var indice=0; indice<pessoas.length; indice++){
+            estrutura += '<tr>'
+                estrutura += '<td>'+pessoas[indice].nome+'</td>'
+                estrutura += '<td>'+pessoas[indice].idade+'</td>'
+                estrutura += '<td>'+(pessoas[indice].estuda ? 'Está estudando' : 'Não está estudando')+'</td>'
+            estrutura += '</tr>'
+        }
+
+        // Finalizar a estrutura de tabela
+        estrutura += '</table>'
+
+        // Exibir no arquivo HTML
+        document.write(estrutura)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
