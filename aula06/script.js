@@ -6,7 +6,14 @@ function cadastrar(){
     var idade  = document.getElementById('idade').value
     var cidade = document.getElementById('cidade').value
 
-    alert(nome+" "+idade+" "+cidade)
+    // Criar um objeto
+    var pessoa = {
+        "nome":nome,
+        "idade":idade,
+        "cidade":cidade
+    }
+
+    alert(JSON.stringify(pessoa))
 
 }
 
