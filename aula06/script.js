@@ -1,5 +1,10 @@
 // Função de cadastro
 function cadastrar(){
-    alert('Olá!!!')
+    
+    // Obter nome, idade e cidade
+    var nome = document.getElementById('nome').value
+
+    alert(nome)
+
 }
 
