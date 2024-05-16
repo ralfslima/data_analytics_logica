@@ -1,3 +1,6 @@
+// Vetor
+var vetor = []
+
 // Função de cadastro
 function cadastrar(){
     
@@ -13,7 +16,11 @@ function cadastrar(){
         "cidade":cidade
     }
 
-    alert(JSON.stringify(pessoa))
+    // Cadastrar objeto no vetor
+    vetor.push(pessoa)
+
+    // Teste via console
+    console.table(vetor)
 
 }
 
