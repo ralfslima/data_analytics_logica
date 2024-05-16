@@ -1,4 +1,20 @@
 body{
-    background-color: green;
+    background-color: rgb(197, 197, 197);
 }
 
+form{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    margin: 0 auto;
+}
+
+input[type="text"]{
+    width: 480px;
+    margin: 5px;    
+}
+
+input[type="button"]{
+    margin: 5px;
+    background-color: green;
+    color: white;
+}
