@@ -24,3 +24,12 @@ function cadastrar(){
 
 }
 
+// Função de seleção
+function selecionar(){
+
+    // Obter o elemento HTML de tabela
+    var tabela = document.getElementById('tabela')
+
+    
+
+}
