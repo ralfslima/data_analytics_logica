@@ -31,8 +31,8 @@ function cadastrar(){
         console.table(vetor)
 
         // Limpar campos
-        document.getElementById('nome').value = ''
-        document.getElementById('idade').value = ''
+        document.getElementById('nome').value   = ''
+        document.getElementById('idade').value  = ''
         document.getElementById('cidade').value = ''
 
         // Deixar o cursor no campo nome
