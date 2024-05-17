@@ -57,3 +57,14 @@ function selecionar(){
     }
 
 }
+
+// Função de remoção
+function remover(indice){
+
+    // Remover pessoa do vetor
+    vetor.splice(indice, 1)
+
+    // Atualizar tabela
+    selecionar()
+
+}
