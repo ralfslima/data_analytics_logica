@@ -9,21 +9,28 @@ function cadastrar(){
     var idade  = document.getElementById('idade').value
     var cidade = document.getElementById('cidade').value
 
-    // Criar um objeto
-    var pessoa = {
-        "nome":nome,
-        "idade":idade,
-        "cidade":cidade
+    // Validação
+    if(nome == '' || idade == '' || cidade == ''){
+        alert('Favor preencher todos os campos')
+    }else{
+
+        // Criar um objeto
+        var pessoa = {
+            "nome":nome,
+            "idade":idade,
+            "cidade":cidade
+        }
+
+        // Cadastrar objeto no vetor
+        vetor.push(pessoa)
+
+        // Atualizar a tabela
+        selecionar()
+
+        // Teste via console
+        console.table(vetor)
+
     }
-
-    // Cadastrar objeto no vetor
-    vetor.push(pessoa)
-
-    // Atualizar a tabela
-    selecionar()
-
-    // Teste via console
-    console.table(vetor)
 
 }
 
