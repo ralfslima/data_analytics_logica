@@ -36,13 +36,18 @@ function selecionar(){
     // Limpar tabela
     tabela.innerHTML = ''
 
-    // Criar uma linha <tr>
-    var linha = tabela.insertRow(-1)
+    // Laço de repetição
+    for(var indice = 0; indice < vetor.length; indice++){
 
-    // Criar uma coluna <td>
-    var coluna = linha.insertCell(0)
+        // Criar uma linha <tr>
+        var linha = tabela.insertRow(-1)
 
-    // Criar o conteúdo da coluna
-    coluna.innerHTML = "Oi"
+        // Criar uma coluna <td>
+        var coluna = linha.insertCell(0)
+
+        // Criar o conteúdo da coluna
+        coluna.innerHTML = vetor[indice].nome
+
+    }
 
 }
