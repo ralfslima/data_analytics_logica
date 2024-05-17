@@ -49,11 +49,11 @@ function selecionar(){
         var colunaRemover = linha.insertCell(3)
 
         // Criar o conteúdo da coluna
-        colunaNome.innerHTML   = vetor[indice].nome
-        colunaIdade.innerHTML  = vetor[indice].idade
-        colunaCidade.innerHTML = vetor[indice].cidade
-        colunaRemover.innerHTML = '<button>Remover</button>'
-
+        colunaNome.innerHTML    = vetor[indice].nome
+        colunaIdade.innerHTML   = vetor[indice].idade
+        colunaCidade.innerHTML  = vetor[indice].cidade
+        //colunaRemover.innerHTML = '<button onclick="remover('+indice+')">Remover</button>'           
+        colunaRemover.innerHTML = `<button onclick='remover(${indice})'>Remover</button>`
     }
 
 }
