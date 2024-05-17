@@ -43,14 +43,16 @@ function selecionar(){
         var linha = tabela.insertRow(-1)
 
         // Criar colunas <td>
-        var colunaNome = linha.insertCell(0)
-        var colunaIdade = linha.insertCell(1)
-        var colunaCidade = linha.insertCell(2)
+        var colunaNome    = linha.insertCell(0)
+        var colunaIdade   = linha.insertCell(1)
+        var colunaCidade  = linha.insertCell(2)
+        var colunaRemover = linha.insertCell(3)
 
         // Criar o conteúdo da coluna
-        colunaNome.innerHTML = vetor[indice].nome
-        colunaIdade.innerHTML = vetor[indice].idade
+        colunaNome.innerHTML   = vetor[indice].nome
+        colunaIdade.innerHTML  = vetor[indice].idade
         colunaCidade.innerHTML = vetor[indice].cidade
+        colunaRemover.innerHTML = '<button>Remover</button>'
 
     }
 
