@@ -19,6 +19,9 @@ function cadastrar(){
     // Cadastrar objeto no vetor
     vetor.push(pessoa)
 
+    // Atualizar a tabela
+    selecionar()
+
     // Teste via console
     console.table(vetor)
 
@@ -30,6 +33,16 @@ function selecionar(){
     // Obter o elemento HTML de tabela
     var tabela = document.getElementById('tabela')
 
-    
+    // Limpar tabela
+    tabela.innerHTML = ''
+
+    // Criar uma linha <tr>
+    var linha = tabela.insertRow(-1)
+
+    // Criar uma coluna <td>
+    var coluna = linha.insertCell(0)
+
+    // Criar o conteúdo da coluna
+    coluna.innerHTML = "Oi"
 
 }
