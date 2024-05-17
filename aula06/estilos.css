@@ -18,3 +18,20 @@ input[type="button"]{
     background-color: green;
     color: white;
 }
+
+table{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: solid 1px white;
+}
+
+/* Linha ímpar da tabela */
+tr:nth-child(odd){
+    background-color: gray;
+}
+
+/* Linha par da tabela */
+tr:nth-child(even){
+    background-color: white;
+}
